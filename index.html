@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> FloripaMaisTec SaveCollege</title>
 </head>
 <body>
-    <script>
-var aluno = [{
-    nome:"Alexandre",
-    altura:'1,71',
-    idade:13,
-    sexo:'masculino',
-    sala:'A',
-    matematica:8,
-    },
+<script>
+//Inicio - Ex1 - dados dos alunos
+var aluno = [
     {
         nome:"Alexandre",
         altura:'1,71',
@@ -38,7 +32,7 @@ var aluno = [{
         idade:13,
         sexo:'masculino',
         sala:'A',
-        matematica:9,
+        matematica:5,
         },
         {
         nome:"Andre",
@@ -46,7 +40,7 @@ var aluno = [{
         idade:11,
         sexo:'masculino',
         sala:'B',
-        matematica:8,
+        matematica:6,
         },
         {
         nome:"Eduardo",
@@ -57,13 +51,25 @@ var aluno = [{
         matematica:9,
         },
     ]
+    console.log('::Ex1 - dados dos alunos')
     console.log(aluno[0].nome,aluno[0].altura,aluno[0].idade,aluno[0].sexo,aluno[0].sala);
     console.log(aluno[1].nome,aluno[1].altura,aluno[1].idade,aluno[1].sexo,aluno[1].sala);
     console.log(aluno[2].nome,aluno[2].altura,aluno[2].idade,aluno[2].sexo,aluno[2].sala);
     console.log(aluno[3].nome,aluno[3].altura,aluno[3].idade,aluno[3].sexo,aluno[3].sala);
     console.log(aluno[4].nome,aluno[4].altura,aluno[4].idade,aluno[4].sexo,aluno[4].sala);
-var media= aluno[0].matematica+aluno[1].matematica+aluno[2].matematica+aluno[3].matematica+aluno[4].matematica/5;
-    console.log(media)
+    //Fim - Ex1 - dados dos alunos
+    //Inicio - Ex2 - média dos alunos
+    console.log('::Ex2 - média dos alunos')
+    var media= (aluno[0].matematica+aluno[1].matematica+aluno[2].matematica+aluno[3].matematica+aluno[4].matematica)/aluno.length;
+    console.log(`Média da nota de matematica dos alunos: ${media}`)
+    //Inicio - Ex3 - alunos aprovados
+    console.log('::Ex3 - alunos aprovados')
+    aluno[0].matematica >= 7 ? console.log(`${aluno[0].nome} APROVADO`) : console.log(`${aluno[0].nome} REPROVADO`)
+    aluno[1].matematica >= 7 ? console.log(`${aluno[1].nome} APROVADO`) : console.log(`${aluno[1].nome} REPROVADO`)
+    aluno[2].matematica >= 7 ? console.log(`${aluno[2].nome} APROVADO`) : console.log(`${aluno[2].nome} REPROVADO`)
+    aluno[3].matematica >= 7 ? console.log(`${aluno[3].nome} APROVADO`) : console.log(`${aluno[3].nome} REPROVADO`)
+    aluno[4].matematica >= 7 ? console.log(`${aluno[4].nome} APROVADO`) : console.log(`${aluno[4].nome} REPROVADO`)
+    //Fim - Ex3 - alunos aprovados
     </script>
 </body>
 </html>
